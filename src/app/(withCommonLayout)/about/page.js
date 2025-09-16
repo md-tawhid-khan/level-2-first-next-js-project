@@ -1,4 +1,10 @@
+
 import styles from "./About.module.css"
+
+export const metadata={
+    title:'next/about',
+    describtion:'this is metadata page'
+}
 
 const AboutPage = () => {
     return (
