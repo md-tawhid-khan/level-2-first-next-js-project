@@ -18,7 +18,7 @@ const  HomePage=async()=>{
      }   
      <div>
       <Link href='/products'>
-      <button className="bg-green-300"> see more </button>
+      <button className="bg-green-300 p-2"> see more </button>
       </Link>
       </div> 
     </div>
