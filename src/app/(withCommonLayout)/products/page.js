@@ -1,7 +1,7 @@
 
 
 const ProductsPage = async() => {
-    const res=await fetch("http://localhost:5000/posts",{cache:"force-cache"}) ;
+    const res=await fetch("http://localhost:5000/posts",{next:{revalidate:5}}) ;
     const posts=await res.json()
     console.log(posts)
     return (
