@@ -1,12 +1,13 @@
 
 
 const ProductsPage = async() => {
-    const res=await fetch("http://localhost:5000/posts") ;
+    const res=await fetch("http://localhost:5000/posts",{cache:"force-cache"}) ;
     const posts=await res.json()
     console.log(posts)
     return (
         <div>
             <h1 className="text-4xl text-center">this is products page</h1>
+            <p>this is for development</p>
             <div >
                 {
                     posts.map(({id,title,views})=><div key={id}

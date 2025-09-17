@@ -2,7 +2,7 @@
 
 import { useRouter } from "next/navigation";
 
-const page = () => {
+const LoginPage = () => {
     const navigate=useRouter()
     const handleNavigation=()=>{
         navigate.push('/register')
@@ -16,4 +16,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default LoginPage;
