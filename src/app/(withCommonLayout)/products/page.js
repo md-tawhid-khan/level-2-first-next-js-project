@@ -1,9 +1,11 @@
 
 
 const ProductsPage = async() => {
-    const res=await fetch("http://localhost:5000/posts",{next:{revalidate:5}}) ;
+    const res=await fetch("http://localhost:5000/posts",{
+        cache:'no-store'
+    }) ;
     const posts=await res.json()
-    console.log(posts)
+  
     return (
         <div>
             <h1 className="text-4xl text-center">this is products page</h1>
