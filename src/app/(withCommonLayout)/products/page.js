@@ -4,7 +4,7 @@ const ProductsPage = async() => {
     const res=await fetch("http://localhost:5000/posts",{
         cache:'no-store'
     }) ;
-    const posts=await res.json()
+    const posts=await res.json() ;
   
     return (
         <div>
